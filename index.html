@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Tienda de productos deportivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Tienda deportiva</h1>
+    <nav>  
+        <ul class="menuhorizontal">
+            <li><a href="#">Productos</a>
+                <ul class="menuvertical">
+                    <li><a href="">Poleras</a></li>
+                    <li><a href="">Zapatillas</a></li>
+                    <li><a href="">Mochilas</a></li>
+                    <li><a href="">Tenis</a></li>
+                </ul>
+            </li>
+            <li><a href="#Productos">Destacados</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Pedidos</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+       <img src="imagenes/tienda_006.png" alt="portada">
+    </div>
+
+    <section class="destacados producto" style="max-width: 200px; margin-left: 20px;">
+        <h2>Tu carrito</h2>
+        <div id="total">Total: $0.00</div>
+        <button onclick="verCarrito()">Ver mi carrito</button>
+    </section>
+    
+    <main>
+        <section class="destacados" id="Productos">
+            <h2>Productos Destacados</h2>
+            <div class="producto aladoizquierdo" data-precio="150">
+                <img src="imagenes/zapatillas nike cafe.jpg" alt="Producto 1">
+                <h3>Zapatillas Nike</h3>
+                <p>Tenis de vestir nike</p>
+                <p>Precio: $150.00</p>
+                <button class="comprar" onclick="comprarProducto('Zapatillas nike',150.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+            <div class="producto aladoderecho" data-precio="40">
+                <img src="imagenes/mochila deportiva azul.jpeg" alt="Producto 2">
+                <h3>Mochila deportiva</h3>
+                <p>Mochila para multiuso</p>
+                <p>Precio: $40.00</p>
+                <button class="comprar" onclick="comprarProducto('Mochila deportiva',40.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+            <div class="producto aladoderecho" data-precio="200">
+                <img src="imagenes/Polera-realmadrid.jpeg" alt="Producto 1">
+                <h3>Polera</h3>
+                <p>Polera Real Madrid</p>
+                <p>Precio: $200.00</p>
+                <button class="comprar" onclick="comprarProducto('Polera real Madrid',200.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+            <div class="producto aladoderecho" data-precio="150">
+                <img src="imagenes/tenis-nike-plomo.jpeg" alt="Producto 1">
+                <h3>Tenis Nike</h3>
+                <p>Tenis de vestir nike</p>
+                <p>Precio: $150.00</p>
+                <button class="comprar" onclick="comprarProducto('Tenis nike',150.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+            <div class="producto aladoizquierdo" data-precio="40">
+                <img src="imagenes/zapatillas-futsal.jpeg" alt="Producto 2">
+                <h3>Zapatillas nike</h3>
+                <p>Zapatillas de futsal</p>
+                <p>Precio: $40.00</p>
+                <button class="comprar" onclick="comprarProducto('Zapatillas de futsal',40.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+        </section>
+
+
+        <section class="destacados" id="Poleras">
+            <h2>Poleras deportivas</h2>
+            <div class="producto aladoizquierdo" data-precio="50">
+                <img src="imagenes/polera-runing.jpg" alt="Producto 3">
+                <h3>Polera</h3>
+                <p>Polera para runing</p>
+                <p>Precio: $50.00</p>
+                <button class="comprar" onclick="comprarProducto('Polera de runing',50.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+            <div class="producto aladoderecho" data-precio="30">
+                <img src="imagenes/polera-barcelona.webp" alt="Producto 4">
+                <h3>Polera nike</h3>
+                <p>Polera de Barcelona</p>
+                <p>Precio: $30.00</p>
+                <button class="comprar" onclick="comprarProducto('Polera Barcelona',30.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+            <div class="producto aladoderecho" data-precio="30">
+                <img src="imagenes/polera-hunder.jpg" alt="Producto 4">
+                <h3>Polera hunder armour</h3>
+                <p>Polera de polietileno</p>
+                <p>Precio: $30.00</p>
+                <button class="comprar" onclick="comprarProducto('polera hunder armour',30.00)">
+                    Agregar al Carrito
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tienda Virtual. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

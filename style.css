@@ -1,0 +1,134 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color:black;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:silver;
+    color: #333;
+}
+
+nav {
+    background-color:black;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo img{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 60vw;
+}
+
+.menuhorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuhorizontal > li >a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menuhorizontal>li:hover{
+    background-color: silver;
+}
+
+.menuvertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: black;
+    
+}
+
+.menuhorizontal li:hover .menuvertical{
+    display: block;
+}
+
+.menuvertical li:hover{
+    background-color: silver;
+}
+
+.menuvertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    margin-right: 10px;
+}
+
+main {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.destacados {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.aladoizquierdo{
+    display:inline-block;
+    height: 120px;
+    width: 200px;
+}
+
+.aladoderecho{
+  display:inline-block;
+  height: 120px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.producto {
+    margin-bottom: 20px;
+}
+
+.producto img {
+    margin-top: 20px;
+    width: 200px;
+    height: 120px;
+    border: 2px black solid;
+}
+
+.producto h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.producto p {
+    font-size: 0.9em;
+}
+
+.producto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
